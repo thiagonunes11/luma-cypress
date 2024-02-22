@@ -39,6 +39,9 @@ describe('LUMA', () => {
     cy.get('#email').type('roni_cost@example.com');
     cy.get('input[type="password"]').type('roni_cost3@example.com');
 
+    //não gosto de utilizar, porém foi necessário
+    cy.wait(2000);
+
     // Submete o formulário de login
     cy.get('#send2').click();
 
