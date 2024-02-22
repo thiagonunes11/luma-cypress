@@ -59,6 +59,9 @@ describe('LUMA', () => {
     // Clica no botão "Create an Account"
     cy.contains('Create an Account').click();
 
+    //não gosto de usar mas foi necessário
+    cy.wait(2000);
+
     //Preenche os dados da conta
     cy.get('#firstname').type(nome);
     cy.get('#lastname').type(sobrenome);
